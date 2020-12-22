@@ -1,4 +1,4 @@
-package com.docsconsole.tutorials.springmvc5.controller;
+package com.docsconsole.tutorials.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,7 +11,7 @@ public class HomeController {
 	@RequestMapping(value = "/getHelloMessage", method = RequestMethod.GET)
 	public String getHelloMessage(ModelMap model) {
 
-		model.addAttribute("msg", "Spring5 MVC XmlViewResolver XMLConfig Example !!");
+		model.addAttribute("msg", "Spring5 MVC ResourceBundleViewResolver XMLConfig Example !!");
 		return "home";
 
 	}
